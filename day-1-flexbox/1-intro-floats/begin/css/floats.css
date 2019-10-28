@@ -5,8 +5,8 @@ html {
 }
 /* inherit border-box on all elements in the universe and before and after
  */
-*, 
-*:before, 
+*,
+*:before,
 *:after {
   box-sizing: inherit;
 }
@@ -30,14 +30,55 @@ div img {
 	max-width: 225px; 
 }
 
-/* grid system -- mobile first! */
+.row {
+	clear: left;
+}
 
+.row .col-md-3,
+.row .col-xs-6,
+.row .col-12 {
+	float: left;
+	margin: 2%;
+	padding: 2%;
+	border: 1px solid black;
+}
+
+.background-yellow {
+	background: yellow;
+}
+
+.background-chartreuse {
+	background: chartreuse;
+}
+
+.background-cornsilk {
+	background: cornsilk;
+}
+
+.background-mediumturquoise {
+	background: mediumturquoise;
+}
+
+/* grid system -- mobile first! */
+.row .col-12 {
+	width: 96%;
+}
 
 /* Mobile Landscape Screen Sizes */
-@media only screen and (min-width: 480px)  {
+@media only screen and (min-width: 576px)  {
 
+	.row .col-xs-6 {
+		width: 46%;
+	}
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
 
+	.row .col-md-3 {
+		width: 20%;
+	}
+
+	.row .col-md-9 {
+		width: 72%;
+	}
 }

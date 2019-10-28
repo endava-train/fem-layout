@@ -34,8 +34,9 @@ div img {
 .row::after {
     content:"";
     display: table;
-    clear:both;
-} 
+    clear: both;
+}
+
 [class*='col-'] {
 	width: 92%;
 	margin-left: 4%;
