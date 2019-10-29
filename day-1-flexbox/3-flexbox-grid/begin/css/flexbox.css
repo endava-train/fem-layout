@@ -30,14 +30,56 @@ div img {
 	max-width: 225px; 
 }
 
+.row {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+.background-yellow {
+	background: yellow;
+}
+
+.background-chartreuse {
+	background: chartreuse;
+}
+
+.background-cornsilk {
+	background: cornsilk;
+}
+
+.background-mediumturquoise {
+	background: mediumturquoise;
+}
+
+.row .col-md-3,
+.row .col-xs-6,
+.row .col-12 {
+	margin: 2%;
+	padding: 2%;
+	border: 1px solid black;
+}
+
 /* grid system -- mobile first! */
+.row .col-12 {
+	flex: 0 0 96%;
+}
 
 
 /* Mobile Landscape Screen Sizes */
 @media only screen and (min-width: 480px)  {
-
+	.row .col-xs-6 {
+		flex: 0 0 46%;
+	}
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
+	.row .col-md-3 {
+		flex: 0 0 21%;
+		/*flex-basis: 25%;*/
+	}
 
+	.row .col-md-9 {
+		flex-basis: 71%;
+	}
 }
