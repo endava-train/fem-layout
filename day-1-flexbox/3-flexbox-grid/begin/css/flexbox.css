@@ -32,7 +32,6 @@ div img {
 
 .row {
 	display: flex;
-	justify-content: space-between;
 	flex-flow: row wrap;
 }
 
@@ -52,8 +51,10 @@ div img {
 	background: mediumturquoise;
 }
 
-.row .col-md-3,
+.row .col-xs-3,
 .row .col-xs-6,
+.row .col-md-3,
+.row .col-md-6,
 .row .col-12 {
 	margin: 2%;
 	padding: 2%;
@@ -65,21 +66,39 @@ div img {
 	flex: 0 0 96%;
 }
 
-
 /* Mobile Landscape Screen Sizes */
-@media only screen and (min-width: 480px)  {
+@media only screen and (min-width: 576px) {
 	.row .col-xs-6 {
 		flex: 0 0 46%;
 	}
+
+	.row .col-xs-3 {
+		flex: 0 0 21%;
+	}
+
+	.order-first-ms {
+		order: -1;
+	}
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
 	.row .col-md-3 {
 		flex: 0 0 21%;
-		/*flex-basis: 25%;*/
 	}
 
 	.row .col-md-9 {
 		flex-basis: 71%;
+	}
+
+	.row .col-md-6 {
+		flex: 0 0 46%;
+	}
+
+	.reverse {
+		flex-direction: row-reverse;
 	}
 }
