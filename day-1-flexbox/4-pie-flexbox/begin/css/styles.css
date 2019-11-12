@@ -95,9 +95,6 @@ div.row {
 [class*='sidebar'] img {
     border-radius: 0 0 10px 10px;
     width: 100%;
-    height: auto;
-    max-width: 250px;
-    display: block; /* without this, there is a gap between the image and border -- space for descenders in text, for inline elements */
 }
 
 .sidebar-secondary {
