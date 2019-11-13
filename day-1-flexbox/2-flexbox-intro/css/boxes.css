@@ -8,7 +8,6 @@ ul {
 	border: 5px dotted red;
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space;
 	align-items: stretch;
 }
 
