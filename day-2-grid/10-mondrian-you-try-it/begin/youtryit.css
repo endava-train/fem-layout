@@ -6,6 +6,7 @@
     grid-template-columns: 305px 95px 160px 74px;
     grid-template-rows: 96px 64px 60px 89px 150px;
     font-size: 1.5rem;
+    border: 4px solid black;
 }
 
 /* borders */
