@@ -2,21 +2,54 @@
 .wrapper {
     width: 633px;
     height: 458px;
-    background: url(mondrian2.png) no-repeat;
     display: grid;
-    grid-gap: 8px 8px;
-    grid-template-columns: 302px 88px 151px 68px;
-    grid-template-rows: 94px 53px 90px 41px 143px;
+    grid-template-columns: 305px 95px 160px 74px;
+    grid-template-rows: 96px 64px 60px 89px 150px;
+    font-size: 1.5rem;
 }
 
-div {
-    border: 1px solid black;
-    background-color: white;
-    opacity: 0.5;
+/* borders */
+
+.e, .f, .g, .h, .i, .j {
+    border-top: 4px solid black;
 }
+
+.a, .b, .c, .e, .f, .h, .i {
+    border-right: 4px solid black;
+}
+
+.a, .b, .c, .d, .e, .f, .g {
+    border-bottom: 4px solid black;
+}
+
+.b, .c, .d, .e, .f, .g, .i, .j {
+    border-left: 4px solid black;
+}
+
+/* colors */
+
+.b, .j {
+    background-color: yellow;
+}
+
+.f, .i {
+    background-color: blue;
+    color: white;
+}
+
+.a, .d {
+    background-color: red;
+    color: white;
+}
+
+.c, .e, .g, .h {
+    background-color: white;
+}
+
+/* grid system */
 
 .a {
-    grid-row: 1 / 4;
+    grid-row: 1 / 5;
     grid-column: 1 / 2;
 }
 
@@ -51,16 +84,17 @@ div {
 }
 
 .h {
-    grid-row: 4 / 5;
+    grid-row: 5 / 6;
     grid-column: 1 / 2;
 }
 
 .i {
-
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
 }
 
 .j {
-    grid-row: 4 / 5;
+    grid-row: 4 / 6;
     grid-column: 3 / 5;
 }
 
