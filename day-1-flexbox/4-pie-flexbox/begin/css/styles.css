@@ -30,10 +30,6 @@ article img {
     max-width: 250px;
 }
 
-nav {
-    /*background: url(../img/scallop.png) repeat-x;*/
-}
-
 .background-scallop-top {
     background: url(../img/scallop.png) repeat-x;
     height: 12px;
